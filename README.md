@@ -1,93 +1,152 @@
-# Backend-SchoolLog
+# <div align="center"> SchoolLog(스쿨로그) </div>
 
-## mirroring test3
+[![Video](https://img.youtube.com/vi/kOacv1Rfq9w/maxresdefault.jpg)](https://youtu.be/kOacv1Rfq9w?si=upe7Qtt_SWF__NOk)
+<br/>
+<div align="center">초·중·고등학교 상담 교실 '위(WEE) 클래스'의 이용 문제점을 해결하기 위해 고안되었으며, 학생들은 AI 챗봇과 간편하게 상담받고 그림 심리 테스트로 자신의 감정 상태를 파악하며, 선생님은 효율적으로 학생의 상담 분석 기록을 관리할 수 있는 서비스입니다.</div>
+
+<br/>
+<div align="center">
+<img height="550" src="https://github.com/Classmate-AI-Chatbot-Project/Schoollog_Backend/assets/63579930/017a072c-7a67-43fe-b1f0-5a5fab014281">
+<img height="550" src="https://github.com/Classmate-AI-Chatbot-Project/Schoollog_Backend/assets/63579930/1311b69a-2956-4596-8fcd-74645f3ca41c">
+</div>
+
+<br/><br/><br/>
+## 목차
+1. [개요](#개요)
+2. [기능 설명](#기능-설명)
+3. [기술 스택](#기술-스택)
+4. [메뉴 구성도 + 백엔드 기여도](#메뉴-구성도)
+5. [ERD](#ERD)
+6. [성과](#성과)
 
 
-## Getting started
+<br/>
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## 개요
+- 프로젝트 이름: SchoolLog(스쿨로그)
+- 개발기간: 2023.03-2023.10
+- 개발 멤버: 팀 클래스메이트(김수현, 노윤하, 박고은, 정윤현, 조다은)
+- 디자이너: 안하은
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+<br/>
 
-## Add your files
+## 기능 설명
+|메인페이지|
+|:---:|
+|<img height="300" width="200" src="https://github.com/gamjatan9/git-practice/assets/122338050/4dbdc6c1-b82d-4e2a-9e21-d86ebd563ce3">|
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+<br/>
 
-```
-cd existing_repo
-git remote add origin https://lab.hanium.or.kr/23_IG007/backend-schoollog.git
-git branch -M main
-git push -uf origin main
-```
+<table>
+  <tr>
+    <td colspan="4" style="align: center;">로그인/회원가입</td>
+  </tr>
+  <tr>
+    <td>
+      <img height="300" width="200" src="https://github.com/gamjatan9/git-practice/assets/122338050/f64fe6df-06a6-47a7-8fbb-c5a17541018c">
+    </td>
+    <td>
+      <img height="300" width="200" src="https://github.com/gamjatan9/git-practice/assets/122338050/e6801d80-ca2a-4f9f-a93e-aa41ec89808b">
+    </td>
+    <td>
+      <img height="300" width="200" src="https://github.com/gamjatan9/git-practice/assets/122338050/125f4b52-b049-45f7-9444-0c5027db9e45">
+    </td>
+    <td>
+      <img height="300" width="200" src="https://github.com/gamjatan9/git-practice/assets/122338050/5a8a0f6c-6c1e-42d0-91e2-e3d195974c50">
+    </td>
+  </tr>
+</table>
+<br/>
 
-## Integrate with your tools
 
-- [ ] [Set up project integrations](https://lab.hanium.or.kr/23_IG007/backend-schoollog/-/settings/integrations)
+|그림심리테스트|
+|:---:|
+|<img height="300" width="200" src="https://github.com/gamjatan9/git-practice/assets/122338050/55b3f9a6-02c5-4339-8134-2f5b44947270">|
 
-## Collaborate with your team
+<br/>
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
 
-## Test and Deploy
+|챗봇 채팅|
+|:---:|
+|<img height="300" width="200" src="https://github.com/gamjatan9/test/assets/122338050/6438ac88-720a-45fc-81a2-b57f7abe3178">|
+<br/>
 
-Use the built-in continuous integration in GitLab.
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+|챗봇 결과|
+|:---:|
+|<img height="300" width="200" src="https://github.com/gamjatan9/git-practice/assets/122338050/18d4b9e8-4024-4043-b796-4920a68ef777">|
 
-***
 
-# Editing this README
+<br/>
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+|마이페이지|
+|:---:|
+|<img height="300" width="190" src="https://github.com/gamjatan9/git-practice/assets/122338050/a7574a08-e6ed-444c-9995-9067782a0969">|
+<br/>
 
-## Name
-Choose a self-explaining name for your project.
+<table>
+  <tr>
+    <td colspan="3" style="align: center;">선생님 관리 페이지</td>
+  </tr>
+  <tr>
+    <td>상담 대화방 목록</td>
+    <td>챗봇 대화 분석 리스트</td>
+    <td>상담 학생 리스트</td>
+  </tr>
+  <tr>
+    <td>
+      <img height="300" width="180" src="https://github.com/gamjatan9/git-practice/assets/122338050/d21d40fc-7123-424e-946f-37ab2f3294c8">
+    </td>
+    <td>
+      <img height="300" width="180" src="https://github.com/gamjatan9/git-practice/assets/122338050/c98e490e-faff-4c63-8d28-940bf2d9e29c">
+    </td>
+    <td>
+      <img height="300" width="180" src="https://github.com/gamjatan9/git-practice/assets/122338050/f2a2285c-0ef9-4e11-ad17-3be172073448">
+    </td>
+  </tr>
+</table>
+<br/>
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+## 기술 스택
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+#### ✔️Frond-end
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black"><img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"><img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"><img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white">
+#### ✔️Back-end
+<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"><img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white"><img src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white">
+#### ✔️아키텍처
+<img  height="350" src="https://github.com/gamjatan9/git-practice/assets/122338050/d512f34c-a64b-49a9-b7ef-9a5a8f025ad3">
+<br/>
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+## 메뉴 구성도
+아래의 이미지에 작성된 기여도는 백엔드 기여도입니다.
+#### 선생님 메뉴 구성도
+<img height="350" src="https://github.com/Classmate-AI-Chatbot-Project/Schoollog_Backend/assets/63579930/cccede2a-0494-43cb-b3da-7b6eb42c1e47">
+<br/>
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+#### 학생 메뉴 구성도
+<img height="350" src="https://github.com/Classmate-AI-Chatbot-Project/Schoollog_Backend/assets/63579930/ae06648a-d6f8-49f5-a9b2-64609f5614f4">
+<br/>
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+## ERD
+<img height="350" src="https://github.com/Classmate-AI-Chatbot-Project/Schoollog_Backend/assets/63579930/48a94f89-c75e-4592-a4be-ef1c280226fd">
+<br/><br/>
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+## 성과
+#### 🎖️이브와 ICT 멘토링 동상 수상&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🎖️저작권 등록&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🎖️특허 출원
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+<P>
+  <img height="300" src="https://github.com/gamjatan9/git-practice/assets/122338050/203e1503-7919-418e-8ba0-12bfe318c3d2">&nbsp;&nbsp;&nbsp;
+  <img height="300" src="https://github.com/gamjatan9/git-practice/assets/122338050/6da3adfe-6bb5-4ab5-8058-0523ef59552d">&nbsp;&nbsp;&nbsp;
+  <img height="300" width="300" src="https://github.com/gamjatan9/git-practice/assets/122338050/91b57cf4-670a-4e43-9670-27b60cd7a6ae">
+</P>
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
 
-## License
-For open source projects, say how it is licensed.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+
+
+
+
